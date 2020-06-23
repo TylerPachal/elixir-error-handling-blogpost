@@ -1,21 +1,10 @@
-# ErrorHandlingBlogpost
+# Error Handling Blogpost
 
-**TODO: Add description**
+The code in this repo is just example code which compliments this blogpost.  The [tests](test/scenarios_test.exs) are just meant to be example references (a lot of them fail on purpose) for the table in this README.
 
-## Installation
+### Quick Summary
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `error_handling_blogpost` to your list of dependencies in `mix.exs`:
+<script src="https://gist.github.com/TylerPachal/f4adc3db4d6231455c952ce26539c7e1.js"></script>
 
-```elixir
-def deps do
-  [
-    {:error_handling_blogpost, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/error_handling_blogpost](https://hexdocs.pm/error_handling_blogpost).
+### In-Depth Table
 
