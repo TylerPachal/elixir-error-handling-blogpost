@@ -21,7 +21,7 @@ defmodule ErrorHandlingBlogpostTest do
     end
 
     # throw & catch - compatible
-    test "is not compatible with throw" do
+    test "is compatible with throw" do
       try do
         throw "throw error"
       catch
@@ -31,7 +31,7 @@ defmodule ErrorHandlingBlogpostTest do
     end
 
     # exit & catch - compatible
-    test "is not compatible with exit" do
+    test "is compatible with exit" do
       try do
         exit("exiting")
       catch
@@ -101,7 +101,7 @@ defmodule ErrorHandlingBlogpostTest do
 
   describe "catch/1" do
     # raise & catch - not compatible
-    test "is compatible with raise" do
+    test "is not compatible with raise" do
       try do
         raise "raise error"
       catch
@@ -112,7 +112,7 @@ defmodule ErrorHandlingBlogpostTest do
     end
 
     # throw & catch - compatible
-    test "is not compatible with throw" do
+    test "is compatible with throw" do
       try do
         throw "throw error"
       catch
@@ -133,7 +133,7 @@ defmodule ErrorHandlingBlogpostTest do
     end
 
     # :erlang.error & catch - not compatible
-    test "is compatible with :erlang.error" do
+    test "is not compatible with :erlang.error" do
       try do
         :erlang.error("erlang error")
       catch
