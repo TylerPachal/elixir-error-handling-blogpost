@@ -9,15 +9,14 @@ defmodule ErrorHandlingBlogpostTest do
   """
   use ExUnit.Case
 
-
   describe "catch/2" do
     # raise & catch - compatible
     test "is compatible with raise" do
       try do
         raise "raise error"
       catch
-        :error, value ->
-          %RuntimeError{message: "raise error"} = value
+        :error, %RuntimeError{message: "raise error"} ->
+          :ok
       end
     end
 
@@ -61,6 +60,7 @@ defmodule ErrorHandlingBlogpostTest do
       rescue
         e ->
           %RuntimeError{message: "raise error"} = e
+          :ok
       end
     end
 
@@ -93,6 +93,7 @@ defmodule ErrorHandlingBlogpostTest do
       rescue
         e ->
           %ErlangError{original: "erlang error"} = e
+          :ok
       end
     end
   end
