@@ -1,6 +1,6 @@
 # Error Handling Blogpost
 
-The code in this repo is just example code which compliments this blogpost (read it for more details!).  The [tests](test/scenarios_test.exs) are just meant to be example references (a lot of them fail on purpose) for the table in this README.
+The code in this repo is just example code which compliments [this blogpost](https://medium.com/@tylerpachal/error-handling-in-elixir-rescue-vs-catch-946e052db97b) (read it for more details!).  The [tests](test/scenarios_test.exs) are just meant to be example references (a lot of them fail on purpose) for the table in this README.
 
 Trigger | Handler | Compatible? | Code
 --- | --- | :---: | ---
